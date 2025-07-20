@@ -167,6 +167,7 @@ h6 {
   color: var(--heading-color);
 }
 
+/* ...existing code... */
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
@@ -177,6 +178,23 @@ h6 {
   border-radius: 50px;
   transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+  .header .btn-getstarted,
+  .header .btn-getstarted:focus {
+    font-size: 12px;
+    padding: 7px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .btn-getstarted,
+  .header .btn-getstarted:focus {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+/* ...existing code... */
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
